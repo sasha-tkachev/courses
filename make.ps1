@@ -1,0 +1,1 @@
+Compress-Archive -Path .\mmn11 -DestinationPath .\build\mmn11.zip

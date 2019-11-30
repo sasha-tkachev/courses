@@ -49,5 +49,4 @@ where
 	b1.eid1 = b2.eid2 and b1.eid2 = b2.eid1 
 	-- prevent reverse order duplication
 	and b1.eid1 < b2.eid1;
-	
-select * from Onproject;
+
