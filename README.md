@@ -14,7 +14,7 @@ When I think all my questions are passing the manual test I can submit the quest
 
 Make sure you are allowed to run powershell scripts 
 ```
-make.ps1
+powershell .\make.ps1
 ```
 Send to the task system the ready mmn uder `build/mmn11.zip`
 
