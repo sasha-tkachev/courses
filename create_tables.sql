@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS Employee,Department,Budget,Project,Onproject;
-SET datestyle TO "European";
+
 create table Employee ( 
 	eid numeric(5,0),
  	ename varchar(30),
@@ -40,14 +40,13 @@ create table Onproject(
 	primary key(pid, eid)
 );
 
-
 CREATE OR REPLACE FUNCTION trigf1()
   RETURNS trigger AS
 $$
 	declare mdudedate date;
 	BEGIN
 	select duedate from Project into mdudedate where Project.pid = new.pid;
-	IF mdudedate < '20/11/2019' THEN
+	IF DATEADD(month, -2, mdudedate)  > new.fdate THEN
 		RETURN null;
 	else
 		RETURN NEW;
@@ -63,6 +62,7 @@ CREATE TRIGGER T1
   EXECUTE PROCEDURE trigf1();
   
 
+SET datestyle TO "European";
 insert into Employee (eid, ename, salary, did, classification)
 values
 	(12345, 'Maya', 15000, 1, 5),
