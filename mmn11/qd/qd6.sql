@@ -14,6 +14,7 @@ with  ValidEmployeeCount as (
 				Employee.classification > 3
 		)
 	group by Project.pid)
+
 select Project.pname 
 from Project
 where 
