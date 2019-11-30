@@ -18,3 +18,4 @@ CREATE TRIGGER T1
   ON Onproject
   FOR EACH ROW
   EXECUTE PROCEDURE trigf1();
+  
