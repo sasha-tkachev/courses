@@ -1,3 +1,9 @@
+SET datestyle TO 'European';
+insert into Department (did, dname, dfloor, head)
+values (1, 'A', 3, 54321),
+	(2, 'B', 3, 12345),
+	(3, 'C', 4, 34567);
+	
 insert into Employee (eid, ename, salary, did, classification)
 values
 	(12345, 'Maya', 15000, 1, 5),
@@ -9,11 +15,7 @@ values
 	(22222, 'Alisa', 10000, 2, 5),
 	(33333, 'Max', 10000, 3, 5);
 	
-insert into Department (did, dname, dfloor, head)
-values (1, 'A', 3, 54321),
-	(2, 'B', 3, 12345),
-	(3, 'C', 4, 34567);
-	
+
 insert into Budget(did, byear, budget)
 values
 	(1, '2014', 250000),
