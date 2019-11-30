@@ -1,7 +1,8 @@
-# Nov 2019 Fall Semester Open University DB Course MMN11 Task
+# DB Course MMN11 Task
+### Open University Nov 2019 Fall Semester 
 This is my solving of the MMN11 task
 ## Usage
-to test a specific query question under the d category use the make_test.bat script
+To test a specific query question under the d category use the make_test.bat script
 
 For example if I want to test question 6 I will do
 ```bash
