@@ -15,7 +15,7 @@ with  ValidEmployeeCount as (
 		)
 	group by Project.pid)
 
-select Project.pname 
+select Project.pname, Project.budget
 from Project
 where 
 	Project.pid not in (
