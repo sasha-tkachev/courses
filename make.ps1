@@ -1,4 +1,5 @@
 
+New-Item -ItemType Directory -Force -Path .\build
 $FirstName = Read-Host -Prompt 'Input your first name'
 $LastName = Read-Host -Prompt 'Input your last name'
 $TazID = Read-Host -Prompt 'Input your TAZ-ID'
